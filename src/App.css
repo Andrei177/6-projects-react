@@ -5,13 +5,23 @@
   height: 90vh;
 }
 .modal{
+  visibility: visible;
+  transition: 1s;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
-  
+}
+.modal.noneM{
+  visibility: hidden;
+  transition: 1s;
+  opacity: 0;
 }
 .modal__content{
   display: flex;
@@ -24,11 +34,6 @@
   background-color: aqua;
   padding: 15px 15px;
 }
-.modal.active{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .btn{
   border: none;
   font-size: 40px;
@@ -37,3 +42,4 @@
   padding: 20px 20px;
   cursor: pointer;
 }
+

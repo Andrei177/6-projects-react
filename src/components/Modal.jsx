@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../App.css';
 
-const Modal = ({active, setModal}) => {
+const Modal = ({add, setAdd}) => {
+  const content = useRef();
+  const modal = useRef();
+
   return (
-    <div onClick={() => setModal(false)} className={active ? "modal active": "modal"}>
-        <div className='modal__content' onClick={e => e.stopPropagation()}>
+    <div ref={modal} className={add?"modal":"modal noneM"} onClick={() => {modal.current.classList.add("noneM"); setAdd(false)} }>
+        <div ref={content} className='modal__content' onClick={e => e.stopPropagation()}>
         Это модальное окно!Кликните в любом месте, чтобы закрыть модальное окно
         </div>
     </div>
