@@ -1,3 +1,39 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.modal{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  
+}
+.modal__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  font-size: 40px;
+  border: 1px solid teal;
+  background-color: aqua;
+  padding: 15px 15px;
+}
+.modal.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  border: none;
+  font-size: 40px;
+  background-color: rgb(114, 251, 28);
+  border-radius: 5px;
+  padding: 20px 20px;
+  cursor: pointer;
 }

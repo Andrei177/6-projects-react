@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import './App.css';
-import Counter from './components/Counter';
+import Modal from './components/Modal';
 
 function App() {
+  const [active, setActive] = useState(false);
   return (
     <div className="App">
-      <Counter/>
+    {active && <Modal active={active} setModal={setActive}/>}
+      <button className='btn' onClick={() => {console.log('click'); setActive(true)}}>Открыть модальное окно</button>
     </div>
   );
 }
