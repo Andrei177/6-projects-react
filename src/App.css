@@ -4,42 +4,29 @@
   align-items: center;
   height: 90vh;
 }
-.modal{
-  visibility: visible;
-  transition: 1s;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+.progress{
+  position: relative;
+  width: 600px;
+  background-color: rgb(123, 128, 128);
+  height: 7px;
+  border-radius: 30px;
+  z-index: 1;
 }
-.modal.noneM{
-  visibility: hidden;
-  transition: 1s;
-  opacity: 0;
-}
-.modal__content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 400px;
-  font-size: 40px;
-  border: 1px solid teal;
+.progress-line{
+  z-index: 3;
+  position: absolute;
   background-color: aqua;
-  padding: 15px 15px;
+  height: 7px;
+  border-radius: 7px;
 }
-.btn{
-  border: none;
-  font-size: 40px;
-  background-color: rgb(114, 251, 28);
-  border-radius: 5px;
-  padding: 20px 20px;
+.response__item{
   cursor: pointer;
+  font-size: 30px;
+  border: 1px solid aqua;
+  width: 200px;
+  height: 100px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-

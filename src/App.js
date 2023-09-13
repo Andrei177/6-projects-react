@@ -1,14 +1,11 @@
-import { useState } from 'react';
 import './App.css';
-import Modal from './components/Modal';
+import Quiz from './components/Quiz';
 
 function App() {
-   const [add, setAdd] = useState(false);
-  return (
   
+  return (
     <div className="App">
-    <Modal add={add}  setAdd={setAdd}/>
-      <button className='btn' onClick={() => setAdd(true)}>Открыть модальное окно</button>
+      <Quiz/>
     </div>
   );
 }
