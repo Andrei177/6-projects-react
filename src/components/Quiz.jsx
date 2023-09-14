@@ -26,7 +26,7 @@ const Quiz = () => {
     <div className='quiz'>
       <div className='progress'><div className='progress-line' style={{width: num<3?200*num:600}}></div></div>
       {
-        questions.filter(question => {return question.number===num}).map(que => {return <h2 key={que.number}>{que.number}.{que.text}</h2>})
+        questions.filter(question => {return question.number===num}).map(que => {return <h2 className='question' key={que.number}>{que.number}.{que.text}</h2>})
       }
       {
         response.filter(res => res.number===num).map(numbr => 
@@ -35,7 +35,7 @@ const Quiz = () => {
         </ul>
         )
       }
-      {(num > 3)&&<h2>Вы угадали {rightCount} вопроса из {num-1}</h2>}
+      {(num > 3)&&<h2 className='result'>Вы угадали {rightCount} вопроса из {num-1}</h2>}
     </div>
   )
 }

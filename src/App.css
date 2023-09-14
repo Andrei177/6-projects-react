@@ -1,32 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: italic;
+}
 .App{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, blue, pink);
+  height: 100vh;
+}
+.title{
+  color: white;
+  font-size: 45px;
+  font-style: italic;
+  margin-bottom: 30px;
 }
 .progress{
   position: relative;
   width: 600px;
-  background-color: rgb(123, 128, 128);
+  background-color: white;
   height: 7px;
   border-radius: 30px;
-  z-index: 1;
+  margin: 0 auto;
 }
 .progress-line{
-  z-index: 3;
   position: absolute;
-  background-color: aqua;
+  background: linear-gradient(to right,blue, rgb(231, 99, 121));;
   height: 7px;
   border-radius: 7px;
+}
+.question{
+  color: white;
+  font-size: 35px;
+  padding: 20px 0px;
 }
 .response__item{
   cursor: pointer;
   font-size: 30px;
-  border: 1px solid aqua;
+  border: 3px solid rgb(174, 255, 0);
+  border-radius: 3px;
   width: 200px;
   height: 100px;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+.quiz{
+  background: rgb(78, 22, 130);
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 2px rgba(23, 34, 45, 0.5);
+  padding: 40px;
+  height: 450px;
+  width: 900px;
+}
+.response{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result{
+  color: white;
+  font-size: 35px;
+  margin-top: 150px;
 }
