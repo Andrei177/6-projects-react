@@ -80,3 +80,26 @@
   cursor: pointer;
   margin-top: 50px;
 }
+@media(max-width: 930px){
+  .quiz{
+    width: 700px;
+  }
+}
+@media(max-width: 770px){
+  .quiz{
+    width: 500px;
+    height: 600px;
+  }
+  .progress{
+    width: 300px;
+  }
+}
+@media(max-width: 525px){
+  .quiz{
+    width: 370px;
+    height: 650px;
+  }
+  .progress{
+    width: 300px;
+  }
+}

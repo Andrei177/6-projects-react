@@ -26,9 +26,10 @@ const Quiz = () => {
     useEffect(()=>{
         console.log(rightCount);
     },[rightCount])
+    let widthProgress = (num-1)/questions.length;
   return (
     <div className='quiz'>
-      <div className='progress'><div className='progress-line' style={{width: num<=5?120*(num-1): 600}}></div></div>
+      <div className='progress'><div className='progress-line' style={{width: `${widthProgress*100}%`}}></div></div>
       {
         questions.filter(question => {return question.number===num}).map(que => {return <h2 className='question' key={que.number}>{que.number}.{que.text}</h2>})
       }
