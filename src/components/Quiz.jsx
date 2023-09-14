@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react'
 
 const Quiz = () => {
     const questions = [
-        {text: 'Чему равен корень из 121?', number: 1},
+        {text: 'Чему равен корень из 225?', number: 1},
         {text: 'Как зовут автора произведения Евгений Онегин?', number: 2},
         {text: 'Какой самый большой орган человека?', number: 3},
         {text: 'В каком году человек впервые полетел в космос?', number: 4},
         {text: 'Какое агрегатное состояние нужно добавить (твёрдый, жидкий и ...)?', number: 5},
     ];
     const response = [
-        {number: 1, response: [10,11,14], right: 11},
+        {number: 1, response: [10,15,14], right: 15},
         {number: 2, response: ["А.С. Пушкин","Л.Н. Толстой","И.С.Тургенев"], right: "А.С. Пушкин"},
         {number: 3, response: ["Печень","Кишечник","Кожа"], right: "Кожа"},
         {number: 4, response: [1960,1962,1961], right: 1961},
